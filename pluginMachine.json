@@ -1,0 +1,30 @@
+{
+    "slug": "atp-connect",
+    "pluginId": 445,
+    "buildId": 480,
+    "entryPoints": {
+        "adminPages": [
+            "settings"
+        ],
+        "blocks": []
+    },
+    "buildIncludes": [
+        "atp-connect.php",
+        "readme.txt",
+        "php",
+        "vendor",
+        "build",
+        "inc",
+        "admin/settings/init.php"
+    ],
+    "buildSteps": {
+        "dev": [
+            "yarn",
+            "yarn start"
+        ],
+        "prod": [
+            "yarn",
+            "yarn build"
+        ]
+    }
+}
