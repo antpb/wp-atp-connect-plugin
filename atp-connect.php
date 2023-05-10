@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: ATP Plugin
+* Plugin Name: ATP Connect Plugin
 * Plugin URI: https://3ov.xyz
 * Description: An AT Protocol Connector for WordPress
 * Version: 0.0.1
@@ -16,4 +16,4 @@
 
 include_once dirname( __FILE__ ). '/inc/functions.php';
 include_once dirname( __FILE__ ). '/inc/hooks.php';
-include_once dirname( __FILE__ ) . '/admin/settings/init.php';
+include_once dirname( __FILE__ ) . '/admin/settings-atp-connect/init.php';
