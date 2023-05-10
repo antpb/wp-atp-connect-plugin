@@ -341,16 +341,6 @@ function uploadImageAndGetBlobId($imageUrl, $jwt, $host) {
 	);
 }
 
-function getImageBase64($imageUrl) {
-    $imageData = file_get_contents($imageUrl);
-    if ($imageData === false) {
-        return false;
-    }
-    $imageBase64 = base64_encode($imageData);
-    return $imageBase64;
-}
-
-
 function handle_post_publish($new_status, $old_status, $post) {
 	$atp_settings = get_option( 'unified_session_data', false );
 	// comma separate $atp_settings['postTypes'] value and if post type is not in the list, return
